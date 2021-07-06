@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+#navbar ::before{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 3px 5px;
+} 
+#logo img{
+    margin: 3px 5px;
+    
+}
+#navbar ul{
+    font-family: 'Fredoka One', cursive;
+    list-style-type: none;
+    display: flex;
+    
+
+}
+
+    
+
+#navbar ul li{
+    list-style-type: none;
+    font-size:2.8rem;
+}
+#navbar ul li a{
+    color: rgb(243, 232, 232);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('backgrnd.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-size: 2.5rem;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services.box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: coral;
+    margin-bottom: 20px;
+   
+}
+#services.box img{
+    height: 160px;
+    margin: auto;
+    display: block;  
+
+} 
+#services.box p{
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+.h-primary{
+    font: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font: 2.0rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(245, 162, 94);
+    color: black;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.center{
+    text-align: center;
+}
